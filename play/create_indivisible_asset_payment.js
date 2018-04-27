@@ -1,16 +1,16 @@
 /*jslint node: true */
 "use strict";
 var headlessWallet = require('../start.js');
-var eventBus = require('byteballcore/event_bus.js');
+var eventBus = require('millixcore/event_bus.js');
 
 function onError(err){
 	throw Error(err);
 }
 
 function createIndivisibleAssetPayment(){
-	var network = require('byteballcore/network.js');
-	var indivisibleAsset = require('byteballcore/indivisible_asset.js');
-	var walletGeneral = require('byteballcore/wallet_general.js');
+	var network = require('millixcore/network.js');
+	var indivisibleAsset = require('millixcore/indivisible_asset.js');
+	var walletGeneral = require('millixcore/wallet_general.js');
 	
 	indivisibleAsset.composeAndSaveIndivisibleAssetPaymentJoint({
 		asset: 'JY4RvlUGv0qWItikizmNOIjIYZeEciODOog8AzLju50=', 

@@ -2,8 +2,8 @@
 "use strict";
 var fs = require('fs');
 var headlessWallet = require('../start.js');
-var eventBus = require('byteballcore/event_bus.js');
-var constants = require('byteballcore/constants.js');
+var eventBus = require('millixcore/event_bus.js');
+var constants = require('millixcore/constants.js');
 
 
 // edit these two constants

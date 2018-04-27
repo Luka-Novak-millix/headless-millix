@@ -1,9 +1,9 @@
 /*jslint node: true */
 "use strict";
-var constants = require('byteballcore/constants.js');
-var conf = require('byteballcore/conf.js');
-var db = require('byteballcore/db.js');
-var eventBus = require('byteballcore/event_bus.js');
+var constants = require('millixcore/constants.js');
+var conf = require('millixcore/conf.js');
+var db = require('millixcore/db.js');
+var eventBus = require('millixcore/event_bus.js');
 var headlessWallet = require('../start.js');
 
 
@@ -21,9 +21,9 @@ function work(){
 	function onError(err){
 		throw err;
 	}
-	var network = require('byteballcore/network.js');
-	var walletGeneral = require('byteballcore/wallet_general.js');
-	var composer = require('byteballcore/composer.js');
+	var network = require('millixcore/network.js');
+	var walletGeneral = require('millixcore/wallet_general.js');
+	var composer = require('millixcore/composer.js');
 	createSplitOutputs(function(arrOutputs){
 		console.log(arrOutputs);
 	//	return unlock();
